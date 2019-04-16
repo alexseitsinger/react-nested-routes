@@ -4,6 +4,14 @@
 
 Allows routes that are nested. Returns a component that should be used on a single master route in the app. Each route specified can set a flag that it is a modal, which will cause it to create two routes: one inside a switch and one outside a switch. This allows two routes with the same URL to be rendered simultaneously (allowing for modal routes to show). The route inside the switch will use the parent route component. The one outside the switch will use the modal component. This allows for modals that can be viewed and referenced by a URL.
 
+## Installation
+
+```npm install @alexseitsinger/react-nested-routes```
+
+or
+
+```yarn add @alexseitsinger/react-nested-routes```
+
 ## Usage
 
 ```javascript
