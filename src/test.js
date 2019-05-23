@@ -1,24 +1,26 @@
 import React from "react"
-import { MemoryRouter } from "react-router"
-import { Route } from "react-router-dom"
+import { MemoryRouter, Switch, Route } from "react-router"
 import createRoutes from "./index"
 
-const setup = (path, Component) => mount(
-	<MemoryRouter initialEntries={[path]}>
-		<Route component={Component}/>
+const setup = (initialPath, Routes) => mount(
+	<MemoryRouter initialEntries={[initialPath]}>
+		<Route component={Routes}/>
 	</MemoryRouter>
 )
+
 const About = () => <div>About</div>
 const Index = () => <div>Index</div>
 const NotFound = () => <div>Not Found</div>
 
 describe("<Routes/>", () => {
-	it("renders index", () => {
-		const wrapper = setup("/", createRoutes([
-			["/", Index, [
-				["/about", About]
-			]]
-		]))
+    it("renders index", () => {
+        const initialPath = "/"
+        const Routes = createRoutes(Switch, Route, [
+            ["/", Index, [
+                ["/about", About],
+            ]]
+        ])
+        const wrapper = setup(initialPath, Routes)
 		expect(wrapper.find(Index)).toHaveLength(1)
 	})
 	// it("renders about", () => {
