@@ -13,7 +13,11 @@
 		"type": "git",
 		"url": "https://github.com/alexseitsinger/react-nested-routes.git"
 	},
-	"files": ["dist/", "package.json", "README.md"],
+	"files": [
+		"dist/",
+		"package.json",
+		"README.md"
+	],
 	"devDependencies": {
 		"@babel/core": "7.4.0",
 		"@babel/preset-env": "7.4.2",
@@ -25,18 +29,18 @@
 		"enzyme-adapter-react-16": "1.6.0",
 		"jest": "24.5.0",
 		"react": "16.8.4",
-		"react-dom": "16.8.4",
-		"react-router-dom": "5.0.0",
+		"react-router": "5.0.0",
 		"webpack": "4.29.6",
-		"webpack-cli": "3.3.0"
+		"webpack-cli": "3.3.0",
+		"webpack-node-externals": "1.7.2"
 	},
 	"dependencies": {
+		"core-js": "3",
 		"underscore": "1.9.1"
 	},
 	"peerDependencies": {
 		"react": "16.8.4",
-		"react-dom": "16.8.4",
-		"react-router-dom": "5.0.0"
+		"react-router": "5.0.0"
 	},
 	"scripts": {
 		"build": "./node_modules/.bin/webpack --config=webpack.config.js",
