@@ -1,3 +1,7 @@
+<a name="v1.0.2"></a>
+## [v1.0.2](https://github.com/alexseitsinger/react-nested-routes/compare/v1.0.1...v1.0.2)
+
+
 <a name="v1.0.1"></a>
 ## [v1.0.1](https://github.com/alexseitsinger/react-nested-routes/compare/v1.0.0...v1.0.1) (2019-05-23)
 
