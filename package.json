@@ -1,6 +1,6 @@
 {
 	"name": "@alexseitsinger/react-nested-routes",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Nestable routes that can be used with modals.",
 	"main": "dist/main.js",
 	"homepage": "https://github.com/alexseitsinger/react-nested-routes#readme",
