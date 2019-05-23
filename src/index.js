@@ -128,6 +128,36 @@ function makeRoutes(Route, arr, routeProps){
 // to dynamically generate them at runtime. The component that this
 // function generates should be the single component used in a route
 // inside the <App/> component.
+/**
+ * @name createRoutes
+ * @description Creates a Routes component for the root route.
+ * @param {Component} Switch The react-router Switch component.
+ * @param {Component} Route The react-router Route component.
+ * @param {Array} arr An array of (nested) route definitions.
+ * @returns {Function} A functional component to use as the root Route.
+ * @example
+ * import React from "react"
+ * import { Route, Switch } from "react-router"
+ * import createRoutes from "@alexseitsinger/react-nested-routes"
+ *
+ * import App from "./app"
+ * import IndexPage from "./pages/landing"
+ * import AboutPage from "./pages/about"
+ * import NotFoundPage from "./pages/not-found"
+ *
+ * const Routes = createRoutes(Switch, Route, [
+ *   ["/", IndexPage, [
+ *     ["/about", AboutPage],
+ *     ["*", NotFoundPage],
+ *   ]]
+ * ])
+ *
+ * export default (
+ *   <App>
+ *     <Route component={Routes}/>
+ *   </App>
+ * )
+ */
 export default (Switch, Route, arr) => (props) => {
     const { mainRoutes, modalRoutes } = makeRoutes(Route, arr, props)
     return (
