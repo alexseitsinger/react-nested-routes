@@ -131,8 +131,8 @@ function makeRoutes(Route, arr, routeProps){
 /**
  * @name createRoutes
  * @description Creates a Routes component for the root route.
- * @param {Component} Switch The react-router Switch component.
- * @param {Component} Route The react-router Route component.
+ * @param {Function} Switch The react-router Switch component.
+ * @param {Function} Route The react-router Route component.
  * @param {Array} arr An array of (nested) route definitions.
  * @returns {Function} A functional component to use as the root Route.
  * @example
