@@ -128,16 +128,14 @@ function makeRoutes(Route, arr, routeProps){
 // to dynamically generate them at runtime. The component that this
 // function generates should be the single component used in a route
 // inside the <App/> component.
-export default (Switch, Route, arr) => {
-	return (props) => {
-		const { mainRoutes, modalRoutes } = makeRoutes(Route, arr, props)
-		return (
-			<React.Fragment>
-				<Switch>
-					{mainRoutes}
-				</Switch>
-				{modalRoutes}
-			</React.Fragment>
-		)
-	}
+export default (Switch, Route, arr) => (props) => {
+    const { mainRoutes, modalRoutes } = makeRoutes(Route, arr, props)
+    return (
+        <React.Fragment>
+            <Switch>
+                {mainRoutes}
+            </Switch>
+            {modalRoutes}
+        </React.Fragment>
+    )
 }
