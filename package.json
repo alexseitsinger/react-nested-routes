@@ -20,6 +20,7 @@
 	],
 	"devDependencies": {
 		"@babel/core": "7.4.5",
+		"@babel/plugin-proposal-export-default-from": "^7.2.0",
 		"@babel/preset-env": "7.4.5",
 		"@babel/preset-react": "7.0.0",
 		"babel-core": "7.0.0-bridge.0",
@@ -30,21 +31,26 @@
 		"jest": "24.8.0",
 		"react": "16.8.6",
 		"react-dom": "16.8.6",
+		"react-redux": "^7.0.3",
 		"react-router": "5.0.0",
+		"redux": "^4.0.1",
 		"webpack": "4.32.2",
 		"webpack-cli": "3.3.2",
 		"webpack-node-externals": "1.7.2"
 	},
 	"dependencies": {
 		"core-js": "3.1.2",
+		"prop-types": "^15.7.2",
 		"underscore": "1.9.1"
 	},
 	"peerDependencies": {
 		"react": "16.8.6",
-		"react-router": "5.0.0"
+		"react-redux": "^7.0.3",
+		"react-router": "5.0.0",
+		"redux": "^4.0.1"
 	},
 	"scripts": {
-		"build": "./node_modules/.bin/webpack --config=webpack.config.js",
+		"build": "./node_modules/.bin/webpack",
 		"test": "./node_modules/.bin/jest test"
 	}
 }
