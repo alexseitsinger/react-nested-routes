@@ -16,40 +16,42 @@ import { generateRoutes } from "./generateRoutes"
 // inside the <App/> component.
 
 /**
- * @description Creates a Routes component for the root route.
+ * @description Creates a stateless functional component for use in the root route. Routes that are marked with `modal: true` are rendered WITH their parent route component.
  * @param {Object} config An object of route configurations. 
- * @returns {Function} A Route component to use as the root route.
+ * @returns {Function} A stateless functional component to be used in the root route.
  * @example
  * import React from "react"
- * import { Route, Switch } from "react-router"
- * import { RootRoute }  from "@alexseitsinger/react-nested-routes"
+ * import { Router, Route, Switch } from "react-router"
+ * import { createRouteComponent }  from "@alexseitsinger/react-nested-routes"
  *
- * import App from "./app"
- * import IndexPage from "./pages/landing"
+ * import LandingPage from "./pages/landing"
  * import AboutPage from "./pages/about"
- * import AboutTeamModalPage from "./pages/about-team-modal"
- * import ContactPage from "./pages/contact"
+ * import AboutModalPage from "./pages/about-modal"
  * import NotFoundPage from "./pages/not-found"
  *
- * export default (
- *   <Router>
- *     <App>
- *       <RootRoute 
- *         config={{
- *           path: "/",
- *           component: IndexPage,
- *           routes: [
- *             { path: "about", component: AboutPage, routes: [
- *               { path: "team", component: AboutTeamModalPage, modal: true },
- *             ]},
- *             { path: "contact", component: ContactPage },
- *             { path: "*", component: NotFoundPage },
- *           ]
- *         }}
- *       />
- *     </App>
- *   </Router>
- * )
+ * const config = {
+ *   path: "/",
+ *   Component: LandingPage,
+ *   routes: [
+ *     {path: "*", Component: NotFoundPage},
+ *     {path: "about", Component: AboutPage, routes: [
+ *       {path: "modal", Component: AboutModalPage, modal: true},
+ *     ]}
+ *   ]
+ * }
+ *
+ * function App(props) {
+ *   const RouteComponent = createRouteComponent({ Switch, Route, config })
+ *   return (
+ *     <Router>
+ *       <Layout>
+ *         <Route component={RouteComponent} />
+ *       </Layout>
+ *     </Router>
+ *   )
+ * }
+ *
+ * export default App
  */
 export function createRouteComponent({ Switch, Route, config }) {
   return function RouteComponent(rootProps) {
