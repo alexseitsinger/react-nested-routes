@@ -1,24 +1,24 @@
 {
 	"name": "@alexseitsinger/react-nested-routes",
-	"version": "1.0.1",
-  "description": "Creates a stateless functional component for use in the root route. Routes that are marked with `modal: true` are rendered WITH their parent route component",
+	"version": "2.0.0",
+	"description": "Creates a stateless functional component for use in the root route. Routes that are marked with `modal: true` are rendered WITH their parent route component",
 	"main": "dist/main.js",
-  "homepage": "https://www.alexseitsinger.com/packages/node/react-nested-routes",
+	"homepage": "https://www.alexseitsinger.com/packages/node/react-nested-routes",
 	"author": {
 		"name": "Alex Seitsinger",
 		"email": "software@alexseitsinger.com",
-	  "url": "https://www.alexseitsinger.com"
-  },
-  "contributors": [
-    {
-      "name": "Alex Seitsinger",
-      "email": "software@alexseitsinger.com",
-      "url": "https://www.alexseitsinger.com"
-    }
-  ],
-  "bugs": {
-    "url": "https://github.com/alexseitsinger/react-nested-routes/issues"
-  },
+		"url": "https://www.alexseitsinger.com"
+	},
+	"contributors": [
+		{
+			"name": "Alex Seitsinger",
+			"email": "software@alexseitsinger.com",
+			"url": "https://www.alexseitsinger.com"
+		}
+	],
+	"bugs": {
+		"url": "https://github.com/alexseitsinger/react-nested-routes/issues"
+	},
 	"license": "BSD-2-Clause",
 	"repository": {
 		"type": "git",
@@ -28,7 +28,7 @@
 		"dist/main.js",
 		"package.json",
 		"README.md",
-   "LICENSE"
+		"LICENSE"
 	],
 	"devDependencies": {
 		"@babel/core": "7.4.5",
