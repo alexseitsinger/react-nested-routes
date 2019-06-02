@@ -4,3 +4,5 @@ node_modules/
 webpack.config.js
 yarn-error.log
 yarn.lock
+jest.config.js
+jest.setup.js
