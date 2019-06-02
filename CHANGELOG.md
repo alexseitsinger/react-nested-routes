@@ -1,5 +1,8 @@
-<a name="v1.0.2"></a>
-## [v1.0.2](https://github.com/alexseitsinger/react-nested-routes/compare/v1.0.1...v1.0.2)
+<a name="v2.0.0"></a>
+## [v2.0.0](https://github.com/alexseitsinger/react-nested-routes/compare/v1.0.1...v2.0.0) (2019-06-02)
+
+### Code Refactoring
+- Moves/renames methods to own modules. ([dfe6515](https://github.com/alexseitsinger/react-nested-routes/commit/dfe651518d0f27c4ce8f237b5f7e981906eac6ac))
 
 
 <a name="v1.0.1"></a>
