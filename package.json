@@ -1,68 +1,73 @@
 {
-	"name": "@alexseitsinger/react-nested-routes",
-	"version": "2.0.0",
-	"description": "Creates a stateless functional component for use in the root route. Routes that are marked with `modal: true` are rendered WITH their parent route component",
-	"main": "dist/main.js",
-	"homepage": "https://www.alexseitsinger.com/packages/node/react-nested-routes",
-	"author": {
-		"name": "Alex Seitsinger",
-		"email": "software@alexseitsinger.com",
-		"url": "https://www.alexseitsinger.com"
-	},
-	"contributors": [
-		{
-			"name": "Alex Seitsinger",
-			"email": "software@alexseitsinger.com",
-			"url": "https://www.alexseitsinger.com"
-		}
-	],
-	"bugs": {
-		"url": "https://github.com/alexseitsinger/react-nested-routes/issues"
-	},
-	"license": "BSD-2-Clause",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/alexseitsinger/react-nested-routes.git"
-	},
-	"files": [
-		"dist/main.js",
-		"package.json",
-		"README.md",
-		"LICENSE"
-	],
-	"devDependencies": {
-		"@babel/core": "7.4.5",
-		"@babel/plugin-proposal-export-default-from": "^7.2.0",
-		"@babel/preset-env": "7.4.5",
-		"@babel/preset-react": "7.0.0",
-		"babel-core": "7.0.0-bridge.0",
-		"babel-jest": "24.8.0",
-		"babel-loader": "8.0.6",
-		"enzyme": "3.9.0",
-		"enzyme-adapter-react-16": "1.13.1",
-		"jest": "24.8.0",
-		"react": "16.8.6",
-		"react-dom": "16.8.6",
-		"react-redux": "^7.0.3",
-		"react-router": "5.0.0",
-		"redux": "^4.0.1",
-		"webpack": "4.32.2",
-		"webpack-cli": "3.3.2",
-		"webpack-node-externals": "1.7.2"
-	},
-	"dependencies": {
-		"core-js": "3.1.2",
-		"prop-types": "^15.7.2",
-		"underscore": "1.9.1"
-	},
-	"peerDependencies": {
-		"react": "16.8.6",
-		"react-redux": "^7.0.3",
-		"react-router": "5.0.0",
-		"redux": "^4.0.1"
-	},
-	"scripts": {
-		"build": "./node_modules/.bin/webpack",
-		"test": "./node_modules/.bin/jest test"
-	}
+  "name": "@alexseitsinger/react-nested-routes",
+  "version": "2.0.0",
+  "description": "Creates a stateless functional component for use in the root route. Routes that are marked with `modal: true` are rendered WITH their parent route component",
+  "main": "dist/main.js",
+  "homepage": "https://www.alexseitsinger.com/packages/node/react-nested-routes",
+  "author": {
+    "name": "Alex Seitsinger",
+    "email": "software@alexseitsinger.com",
+    "url": "https://www.alexseitsinger.com"
+  },
+  "contributors": [
+    {
+      "name": "Alex Seitsinger",
+      "email": "software@alexseitsinger.com",
+      "url": "https://www.alexseitsinger.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/alexseitsinger/react-nested-routes/issues"
+  },
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexseitsinger/react-nested-routes.git"
+  },
+  "files": [
+    "dist/main.js",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "react", 
+    "route", 
+    "modal"
+  ],
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-react": "7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "24.8.0",
+    "babel-loader": "8.0.6",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "1.13.1",
+    "jest": "24.8.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router": "5.0.0",
+    "redux": "^4.0.1",
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.2",
+    "webpack-node-externals": "1.7.2"
+  },
+  "dependencies": {
+    "core-js": "3.1.2",
+    "prop-types": "^15.7.2",
+    "underscore": "1.9.1"
+  },
+  "peerDependencies": {
+    "react": "16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router": "5.0.0",
+    "redux": "^4.0.1"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "test": "./node_modules/.bin/jest test"
+  }
 }
