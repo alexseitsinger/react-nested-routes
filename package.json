@@ -1,6 +1,6 @@
 {
   "name": "@alexseitsinger/react-nested-routes",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Creates a stateless functional component for use in the root route. Routes that are marked with `modal: true` are rendered WITH their parent route component",
   "main": "dist/main.js",
   "homepage": "https://www.alexseitsinger.com/packages/node/react-nested-routes",
@@ -31,8 +31,8 @@
     "LICENSE"
   ],
   "keywords": [
-    "react", 
-    "route", 
+    "react",
+    "route",
     "modal"
   ],
   "devDependencies": {
