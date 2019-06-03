@@ -3,7 +3,7 @@ import { MemoryRouter, StaticRouter, Switch, Route } from "react-router"
 import { createRouteComponent } from "../src"
 
 const setup = (url, config) => {
-  const RouteComponent = createRouteComponent({ Switch, Route, config })
+  const RouteComponent = createRouteComponent({ Switch, Route, config, reportRoutes: true })
   return mount(
     <MemoryRouter initialEntries={[url]}>
       <Route component={RouteComponent} />
