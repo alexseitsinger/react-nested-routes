@@ -2,6 +2,8 @@ import React from "react"
 
 import { generateRoutes } from "./generateRoutes"
 
+const env = process.env.NODE_ENV || "production"
+
 // ***NOTE***
 // Since React-Router & React-Router-DOM use a context object.
 // Using this package multiple times uses multiple context objects
@@ -56,7 +58,7 @@ import { generateRoutes } from "./generateRoutes"
 export function createRouteComponent({ Switch, Route, config, reportRoutes = false }) {
   return function RouteComponent(rootProps) {
     const { mainRoutes, modalRoutes } = generateRoutes({ config, rootProps, Route })
-    if(reportRoutes === true){
+    if((reportRoutes === true) && (env === "development")){
       const mainRoutePaths = mainRoutes.map((route, i) => {
         const number = (i + 1)
         const path = route.props.path
