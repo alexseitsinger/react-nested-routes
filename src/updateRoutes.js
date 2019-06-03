@@ -31,7 +31,7 @@ export function updateRoutes({
     var routePath = route.path
     if(!routePath.startsWith(path)){
       // Replace multiple slashes with one.
-      routePath = `${path}/${routePath}`.replace(/(\/)\/+/g, "$1")
+      routePath = `/${path}/${routePath}`.replace(/(\/)\/+/g, "$1")
     }
     // If it's a wildcard path, fix it.
 		if(routePath === "/*"){
