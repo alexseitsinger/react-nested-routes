@@ -1,3 +1,14 @@
+<a name="v2.1.0"></a>
+## [v2.1.0](https://github.com/alexseitsinger/react-nested-routes/compare/v2.0.0...v2.1.0) (2019-06-03)
+
+### Bug Fixes
+- Adds missing / to beginning of path. ([2395019](https://github.com/alexseitsinger/react-nested-routes/commit/2395019dacdfe939756952315105d6b7ce2b61d8))
+
+### Code Refactoring
+- ReportRoute only in development. ([68afe9a](https://github.com/alexseitsinger/react-nested-routes/commit/68afe9a47e434e8a4406bb1b2839f09d1a53475b))
+- Updates reportRoutes log message. ([5412325](https://github.com/alexseitsinger/react-nested-routes/commit/5412325b9c71b0937f46f3466f3cc09d628bb628))
+
+
 <a name="v2.0.0"></a>
 ## [v2.0.0](https://github.com/alexseitsinger/react-nested-routes/compare/v1.0.1...v2.0.0) (2019-06-02)
 
